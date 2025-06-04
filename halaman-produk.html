@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Detail Produk - KIKI STICKER</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/bagian-produk.css" />
+</head>
+<body>
+
+  <header class="header-toko">
+    <h1>KIKI STICKER (PRIVIEW)</h1>
+  </header>
+
+  <div class="container">
+
+    <!-- KIRI -->
+    <div class="kolom-kiri">
+      <img id="mainImage" src="images/hantu/4.jpg" alt="Sticker Hantu Laut" class="product-image" />
+      <div class="thumbnail-gallery">
+        <img src="images/hantu/4.jpg" onclick="gantiGambar(this)" alt="Thumbnail 1" />
+        <img src="images/hantu/3.jpg" onclick="gantiGambar(this)" alt="Thumbnail 2" />
+        <img src="images/hantu/2.jpg" onclick="gantiGambar(this)" alt="Thumbnail 3" />
+        <img src="images/hantu/1.jpg" onclick="gantiGambar(this)" alt="Thumbnail 4" />
+      </div>
+    </div>
+
+    <!-- TENGAH -->
+    <div class="kolom-tengah">
+      <h2 class="title">
+        CUTTING STICKER KACA MOBIL, PINTU, BODY ATAU VISOR MOTOR - STICKER HANTU LAUT
+      </h2>
+      <p class="price">Rp18.700</p>
+
+      <div class="warna-varian">
+        <h3>WARNA</h3>
+        <button class="warna">PUTIH</button>
+        <button class="warna">HITAM</button>
+        <button class="warna">MERAH</button>
+      </div>
+
+      <div class="deskripsi-produk">
+        <h3>Deskripsi Produk</h3>
+        <div class="deskripsi-isi">
+          <p><strong>CUTTING STIKER KACA MOBIL, BODY MOTOR VISOR HELM, PINTU, DAN LAINNYA STIKER HANTU LAUT</strong></p>
+          <p><strong>KUALITAS STICKER TERBAIK ORACAL 651 GERMANY</strong><br>
+          PEMASANGAN MUDAH, AWET, WARNA TAJAM, TAHAN HUJAN DAN PANAS. AMAN PADA BODY KENDARAAN</p>
+
+          <p><strong>BARANG KITA SELALU READY KARENA KITA PRODUKSI SENDIRI</strong><br>
+          UKURAN 18,5X25 CM<br>
+          HARGA RP 18.700/PIECE<br>
+          WARNA TERSEDIA: PUTIH, HITAM, MERAH</p>
+
+          <p><strong>KEUNTUNGAN MENGGUNAKAN STICKER PADA MOBIL/MOTOR:</strong></p>
+          <ul>
+            <li>MOBIL GAMPANG DIKENALI BAHKAN DARI KEJAUHAN (PARKIRAN).</li>
+            <li>BEDA DARI YANG LAIN.</li>
+            <li>MENUNJUKKAN KARAKTER PRIBADI ATAU FAVORIT PENGGUNA MOBIL.</li>
+            <li>FAKTOR KEAMANAN KARENA JARANG MAU DICURI MALING.</li>
+          </ul>
+
+          <p><strong>MOHON CANTUMKAN PILIHAN WARNA PADA KETERANGAN/PESAN/CATATAN ORDER.</strong><br>
+          TANPA KETERANGAN DIKIRIM RANDOM. ATAU CHAT SELLER.</p>
+
+          <p><strong>BARANG RINGAN, HEMAT ONGKIR, BISA BELI BEBERAPA STIKER SEKALIGUS UNTUK 1X ONGKIR 1 KG.</strong></p>
+
+          <p><strong>MONGGO DIORDER, BRO/SIS...!<br>TERIMA KASIH SEMOGA BERKAH</strong></p>
+
+          <p>🛒 <strong>Tips:</strong> Bersihkan permukaan terlebih dahulu sebelum pemasangan.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- KANAN -->
+    <div class="kolom-kanan">
+      <div class="logo-toko">
+        <img src="images/logo.png" alt="Logo Toko" />
+      </div>
+      <button class="kunjungi-toko" id="btnKunjungiToko">KUNJUNGI TOKO</button>
+      <div class="marketplaces" id="marketplaceLogos" style="display:none;">
+  <a href="https://www.tiktok.com/@kiki_sticker" target="_blank">
+    <img src="images/logo-e/tiktokshop_logo.png" alt="TikTok" />
+  </a>
+  <a href="https://shopee.co.id/kiki_sticker?entryPoint=ShopBySearch&searchKeyword=kiki%20sticker" target="_blank">
+    <img src="images/logo-e/shopee_logo.png" alt="Shopee" />
+  </a>
+  <a href="https://www.tokopedia.com/kikisticker?entrance_name=search_suggestion_store&source=universe&st=product" target="_blank">
+    <img src="images/logo-e/tokopedia_logo.png" alt="Tokopedia" />
+  </a>
+  <a href="https://www.lazada.co.id/shop/kiki-sticker/?spm=a2o4j.pdp_revamp.seller.1.19a4241exwGD57&itemId=5774648689&channelSource=pdp" target="_blank">
+    <img src="images/logo-e/lazada_logo.png" alt="Lazada" />
+  </a>
+</div>
+
+    </div>
+
+  </div>
+
+  <!-- Modal -->
+  <div id="zoomModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="zoomedImage" />
+  </div>
+
+  <script src="js/bagian-produk.js"></script>
+</body>
+</html>
