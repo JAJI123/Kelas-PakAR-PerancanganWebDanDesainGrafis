@@ -1,0 +1,329 @@
+/* ============================
+   BODY & LATAR BELAKANG
+============================ */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)),
+              url('../images/bg/batik.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding-top: 80px; /* Tambahkan padding untuk header fixed */
+  color: #222;
+}
+
+/* ============================
+   HEADER NAVIGASI (FIXED)
+============================ */
+.nav-wrapper {
+  position: fixed; /* Ubah dari sticky ke fixed */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #00aaff;
+  padding: 15px 30px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.brand-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+/* ============================
+   KERANJANG COUNT
+============================ */
+.icon-keranjang {
+  position: relative;
+  margin-left: auto;
+}
+
+.keranjang-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding: 3px 6px;
+  border-radius: 50%;
+}
+
+/* ============================
+   CONTAINER UTAMA (PENYESUAIAN)
+============================ */
+.keranjang-container {
+  max-width: 1200px;
+  margin: 20px auto 40px; /* Sesuaikan margin atas */
+  padding: 25px 30px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+/* ============================
+   TABEL KERANJANG
+============================ */
+.keranjang-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.keranjang-table th {
+  background-color: #f0f8ff;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #ccc;
+}
+
+.keranjang-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+}
+
+/* Judul Produk */
+.keranjang-table td:nth-child(2) {
+  font-weight: 600;
+  color: #222;
+  max-width: 220px;
+  word-wrap: break-word;
+}
+
+/* Gambar Produk */
+.produk-img {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 60px;
+  height: auto;
+}
+
+/* Form Qty */
+.qty-form {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.qty-input {
+  width: 50px;
+  padding: 6px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.update-btn {
+  width: 30px;
+  height: 30px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.update-btn:hover {
+  background-color: #388e3c;
+}
+
+/* Harga */
+.price {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Tombol Hapus */
+.delete-btn {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: #e74c3c;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+/* ============================
+   TOTAL DAN TOMBOL BAYAR
+============================ */
+.total-section {
+  text-align: right;
+  font-size: 18px;
+  margin-top: 30px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.checkout-btn {
+  padding: 12px 25px;
+  background-color: #00aaff;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.checkout-btn:hover {
+  background-color: #0088cc;
+}
+
+.back-btn {
+  padding: 12px 25px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  border-radius: 10px;
+  color: #333;
+  transition: background 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #ddd;
+}
+
+/* ============================
+   KERANJANG KOSONG
+============================ */
+.empty-cart {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.empty-cart p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* ============================
+   TOMBOL BAYAR MENGAMBANG
+============================ */
+.kolom-kanan {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 300;
+  width: 200px;
+  transition: all 0.3s ease;
+}
+
+.kolom-kanan:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.kolom-kanan .checkout-btn {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+/* ============================
+   RESPONSIF
+============================ */
+@media (max-width: 768px) {
+  .keranjang-table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .checkout-btn,
+  .back-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+
+  .brand-name {
+    font-size: 18px;
+  }
+}
+
+.popup-modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.popup-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+.popup-content h3 {
+  margin-bottom: 10px;
+}
+
+.popup-content .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}

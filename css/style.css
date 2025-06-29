@@ -1,0 +1,301 @@
+/* =======================================
+   VARIABEL WARNA UTAMA
+======================================= */
+:root {
+    --primary-color: #00aaff;
+    --secondary-color: #00aaff;
+    --accent-color: #f72585;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --background-dark: #121212;
+    --card-bg: #1e1e1e;
+    --text-light: #f8f9fa;
+    --text-muted: #6c757d;
+}
+
+/* =======================================
+   RESET & GLOBAL
+======================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: var(--background-dark);
+    color: var(--text-light);
+}
+
+/* =======================================
+   LAYOUT UTAMA
+======================================= */
+.wrapper {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* =======================================
+   NAVIGASI
+======================================= */
+nav {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.brand-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    color: var(--text-light);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* =======================================
+   HEADER
+======================================= */
+header {
+    background: url("../images/bg.jpg") center/cover no-repeat;
+    height: 70vh;
+    min-height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header-opacity {
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header-content h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: var(--text-light);
+    margin-bottom: 15px;
+    font-family: 'Marcellus', serif;
+    letter-spacing: 2px;
+}
+
+.header-content h4 {
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    color: var(--text-light);
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+/* =======================================
+   BAGIAN JUDUL PRODUK
+======================================= */
+.product-title-section {
+    background-color: var(--primary-color);
+    padding: 20px 0;
+    margin: 30px 0;
+}
+
+.product-title-section h2 {
+    text-align: center;
+    color: var(--text-light);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 600;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* =======================================
+   GRID PRODUK
+======================================= */
+.product-grid {
+    padding: 20px 0 40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-item {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.product-image-container {
+    padding: 15px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.product-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+.product-details {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-details h3 {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin: 0;
+    font-weight: 500;
+}
+
+/* =======================================
+   IKON KERANJANG
+======================================= */
+.icon-keranjang {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.icon-keranjang img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s;
+}
+
+.icon-keranjang:hover img {
+    transform: scale(1.1);
+}
+
+.keranjang-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: var(--accent-color);
+    color: white;
+    font-size: 0.75rem;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* =======================================
+   RESPONSIVE DESIGN
+======================================= */
+@media (max-width: 768px) {
+    .nav-wrapper {
+        padding: 12px 15px;
+    }
+
+    .logo img {
+        height: 35px;
+    }
+
+    .brand-name {
+        font-size: 1.2rem;
+    }
+
+    header {
+        height: 50vh;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 15px;
+    }
+
+    .product-image-container {
+        height: 150px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        gap: 8px;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    .brand-name {
+        font-size: 1rem;
+    }
+
+    .header-content h1 {
+        font-size: 2rem;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .icon-keranjang img {
+        width: 24px;
+        height: 24px;
+    }
+}
