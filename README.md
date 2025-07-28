@@ -64,7 +64,6 @@ Proyek ini masih dalam pengembangan dengan beberapa fitur seperti sistem pembaya
 Pojok kanan bawah versi landing page (perubahan tata letak agar ada judul dan deksripsi langsung)
 <table>
   <tr>
-    <td><img src="ss/Screenshot%20(189).png" width="400"/></td>
     <td><img src="ss/Screenshot%20(190).png" width="400"/></td>
   </tr>
   <tr>
