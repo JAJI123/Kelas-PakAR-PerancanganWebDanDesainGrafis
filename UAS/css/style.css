@@ -1,0 +1,295 @@
+/* =======================================
+   VARIABEL WARNA UTAMA
+======================================= */
+:root {
+  --primary-color: #00aaff;
+  --secondary-color: #00aaff;
+  --accent-color: #f72585;
+  --light-color: #00aaff;
+  --dark-color: #212529;
+  --background-dark: #121212;
+  --card-bg: #1e1e1e;
+  --text-light: #f8f9fa;
+  --text-muted: #6c757d;
+}
+
+/* =======================================
+   RESET & GLOBAL
+======================================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--background-dark);
+  color: var(--text-light);
+}
+
+/* =======================================
+   NAVIGASI
+======================================= */
+nav {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #0aaffa; 
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.contact-box {
+  padding: 10px;
+}
+
+.contact-button {
+  background-color: none;
+  color: #fdfeff;
+  padding: 8px 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #00aaff;
+}
+
+/* =======================================
+   HEADER
+======================================= */
+header {
+    background: url("../images/bg.jpg") center/cover no-repeat;
+    height: 70vh;
+    min-height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header-opacity {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header-content h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: var(--text-light);
+    margin-bottom: 15px;
+    font-family: 'Marcellus', serif;
+    letter-spacing: 2px;
+}
+
+.header-content h4 {
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    color: var(--text-light);
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+/* =======================================
+   JUDUL PRODUK
+======================================= */
+.product-title-section {
+  background-color: var(--primary-color);
+  padding: 20px 0;
+  margin-top: 100px;
+}
+
+.product-title-section h2 {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 600;
+}
+
+/* =======================================
+   GRID PRODUK
+======================================= */
+.product-grid {
+  padding: 40px 0;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.product-item {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: inherit;
+  padding: 20px;
+}
+
+.product-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+
+.product-image-container {
+  flex: 1;
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.product-image-container img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+/* MULTI-GAMBAR DALAM SATU PRODUK ITEM */
+.product-images {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.product-images img {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0;
+  border: 1px solid #333;
+}
+
+.product-info {
+  flex: 2;
+  margin-top: 25px;     /* Jarak dari gambar */
+  padding-left: 25px;   /* Jarak dari sisi kiri */
+}
+
+.product-info h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #f8f9fa;
+}
+
+.product-info p {
+  font-size: 16px;
+  color: var(--text-muted);
+}
+
+/* =======================================
+   LINK DETAIL (Opsional)
+======================================= */
+.detail-link {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.detail-link:hover {
+  background-color: #0077cc;
+}
+
+/* =======================================
+   RESPONSIF
+======================================= */
+@media (max-width: 768px) {
+  .product-item {
+    flex-direction: column;
+  }
+
+  .product-image-container {
+    height: 180px;
+  }
+
+  .header-content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-name {
+    font-size: 1.1rem;
+  }
+
+  .logo img {
+    height: 30px;
+  }
+
+  .contact-button {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .grid-container {
+    padding: 0 10px;
+  }
+}
