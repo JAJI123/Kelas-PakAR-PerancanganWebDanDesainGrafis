@@ -62,6 +62,8 @@ Proyek ini masih dalam pengembangan dengan beberapa fitur seperti sistem pembaya
 
 <h2>📸 Tampilan Antarmuka</h2>
 
+<h2>📸 Tampilan Antarmuka</h2>
+Pojok kanan bawah versi landing page (perubahan tata letak agar ada judul dan deksripsi langsung)
 <table>
   <tr>
     <td><img src="ss/Screenshot%20(189).png" width="400"/></td>
@@ -77,7 +79,8 @@ Proyek ini masih dalam pengembangan dengan beberapa fitur seperti sistem pembaya
   </tr>
   <tr>
     <td><img src="ss/Screenshot%20(195).png" width="400"/></td>
-    <td></td>
+    <td><img src="ss/Screenshot%20(196).png" width="400"/></td>
   </tr>
 </table>
+
 
