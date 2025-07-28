@@ -1,4 +1,4 @@
-File ada 2 kodingan full dengan database dan hanya landing page untuk UAS
+File ada 2 kodingan full dengan database https://kikisticker.bisdig23.com/ dan hanya landing page untuk UAS
 
 # KIKI STICKER - Landing Page
 Website ini adalah landing page sederhana untuk **KIKI STICKER**
