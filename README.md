@@ -60,15 +60,24 @@ Proyek e-commerce KIKI STICKER dikembangkan dengan pendekatan berikut:
 ## Catatan
 Proyek ini masih dalam pengembangan dengan beberapa fitur seperti sistem pembayaran belum sepenuhnya diimplementasikan.
 
-## 📸 Tampilan Antarmuka
+<h2>📸 Tampilan Antarmuka</h2>
 
-Berikut beberapa tampilan antarmuka dari landing page:
-
-![Screenshot 189](ss/Screenshot%20(189).png)
-![Screenshot 190](ss/Screenshot%20(190).png)
-![Screenshot 191](ss/Screenshot%20(191).png)
-![Screenshot 192](ss/Screenshot%20(192).png)
-![Screenshot 193](ss/Screenshot%20(193).png)
-![Screenshot 194](ss/Screenshot%20(194).png)
-![Screenshot 195](ss/Screenshot%20(195).png)
+<table>
+  <tr>
+    <td><img src="ss/Screenshot%20(189).png" width="400"/></td>
+    <td><img src="ss/Screenshot%20(190).png" width="400"/></td>
+  </tr>
+  <tr>
+    <td><img src="ss/Screenshot%20(191).png" width="400"/></td>
+    <td><img src="ss/Screenshot%20(192).png" width="400"/></td>
+  </tr>
+  <tr>
+    <td><img src="ss/Screenshot%20(193).png" width="400"/></td>
+    <td><img src="ss/Screenshot%20(194).png" width="400"/></td>
+  </tr>
+  <tr>
+    <td><img src="ss/Screenshot%20(195).png" width="400"/></td>
+    <td></td>
+  </tr>
+</table>
 
