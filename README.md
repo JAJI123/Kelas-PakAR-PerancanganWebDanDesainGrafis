@@ -1,3 +1,5 @@
+# NAMA: JAJI HAKIKI NIM: 23110310027
+
 # README - KIKI STICKER E-COMMERCE (ADA VERSI LANDING PAGE 'FOLER LANDING PAGE')
 
 ## Proses Pengerjaan
@@ -57,3 +59,16 @@ Proyek e-commerce KIKI STICKER dikembangkan dengan pendekatan berikut:
 
 ## Catatan
 Proyek ini masih dalam pengembangan dengan beberapa fitur seperti sistem pembayaran belum sepenuhnya diimplementasikan.
+
+## 📸 Tampilan Antarmuka
+
+Berikut beberapa tampilan antarmuka dari landing page:
+
+![Screenshot 189](ss/Screenshot%20(189).png)
+![Screenshot 190](ss/Screenshot%20(190).png)
+![Screenshot 191](ss/Screenshot%20(191).png)
+![Screenshot 192](ss/Screenshot%20(192).png)
+![Screenshot 193](ss/Screenshot%20(193).png)
+![Screenshot 194](ss/Screenshot%20(194).png)
+![Screenshot 195](ss/Screenshot%20(195).png)
+
