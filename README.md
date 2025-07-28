@@ -1,31 +1,59 @@
-File ada 2 kodingan full dengan database https://kikisticker.bisdig23.com/ dan hanya landing page untuk UAS
+# README - KIKI STICKER E-COMMERCE (ADA VERSI LANDING PAGE 'FOLER LANDING PAGE')
 
-# KIKI STICKER - Landing Page
-Website ini adalah landing page sederhana untuk **KIKI STICKER**
-##  Teknologi yang Digunakan
-- **HTML5** – untuk struktur halaman
-- **CSS3** – untuk styling dan responsivitas
-- **Responsif** – mendukung tampilan mobile dan desktop
-- **Tidak menggunakan JavaScript atau framework**
+## Proses Pengerjaan
+Proyek e-commerce KIKI STICKER dikembangkan dengan pendekatan berikut:
 
-##  Struktur Halaman
-1. **Navigasi (Navbar)**
-   - Menampilkan logo dan tombol "Hubungi Kami" yang langsung terhubung ke WhatsApp.
-   - Posisi tetap di atas (`fixed`).
-2. **Header Section**
-   - Menampilkan banner besar (background image) dengan teks di tengah (judul dan subjudul).
-   - Efek overlay gelap untuk meningkatkan kontras teks.
-3. **Judul Produk**
-   - Seksi judul “Kamu Mungkin Suka” sebagai pembuka daftar produk.
-4. **Daftar Produk**
-   - Produk ditampilkan dalam bentuk **grid satu kolom**.
-   - Setiap produk menampilkan beberapa gambar sekaligus dalam satu blok.
-   - Informasi produk mencakup nama dan deskripsi.
+### 1. Persiapan Awal
+- Membuat struktur folder dan file dasar
+- Setup database MySQL dengan tabel-tabel utama:
+  - `produk` (untuk menyimpan data produk)
+  - `keranjang` (untuk menyimpan item keranjang belanja)
+  - `varian` (untuk opsi varian produk)
+  - `produk_gambar` (untuk gambar tambahan produk)
 
-##  Fitur Styling CSS
-- Warna utama: `#00aaff` (biru terang).
-- Background gelap untuk tampilan elegan dan fokus ke produk.
-- Gambar produk **tidak rounded**, rapi dan presisi.
-- Margin dan padding disesuaikan untuk konsistensi jarak antar elemen.
-- Responsive menggunakan media query (`max-width: 768px` dan `480px`).
+### 2. Pengembangan Fitur Inti
+- **Sistem Produk**:
+  - Halaman utama menampilkan grid produk
+  - Halaman detail produk dengan gambar, deskripsi, dan pilihan varian
+  - Kategori khusus dengan penanganan khusus (HANTU LAUT, KINGKONG, dll)
 
+- **Keranjang Belanja**:
+  - Sistem session-based untuk keranjang
+  - Fungsi CRUD (Create, Read, Update, Delete) item keranjang
+  - Perhitungan total belanja otomatis
+
+- **Checkout**:
+  - Form sederhana untuk informasi pembeli
+  - Simpan data pesanan ke database
+
+### 3. Implementasi Desain
+- Menggunakan CSS modern dengan:
+  - Flexbox dan Grid untuk layout
+  - Animasi hover untuk interaktivitas
+  - Desain responsif untuk mobile device
+  - Skema warna biru sebagai warna utama
+
+### 4. Integrasi Eksternal
+- Link ke marketplace eksternal (Shopee, Tokopedia, dll)
+- Popup informasi toko yang sticky
+
+### 5. Testing & Debugging
+- Testing fungsi utama:
+  - Menambah/mengubah item keranjang
+  - Proses checkout
+  - Tampilan di berbagai device
+- Perbaikan bug minor terkait session dan database
+
+## Teknologi Yang Digunakan
+- PHP 7+ untuk backend
+- MySQL untuk database
+- HTML5, CSS3 untuk frontend
+- JavaScript dasar untuk interaktivitas
+
+## Cara Menjalankan
+1. Import database dari file SQL yang disediakan
+2. Sesuaikan konfigurasi di `config.php`
+3. Akses melalui web server (Apache/Nginx)
+
+## Catatan
+Proyek ini masih dalam pengembangan dengan beberapa fitur seperti sistem pembayaran belum sepenuhnya diimplementasikan.
