@@ -79,7 +79,7 @@ Pojok kanan bawah versi landing page (perubahan tata letak agar ada judul dan de
   </tr>
   <tr>
     <td><img src="ss/Screenshot%20(195).png" width="400"/></td>
-    <td><img src="ss/Screenshot%20(196).png" width="400"/></td>
+    <td><img src="ss/Screenshot%20(197).png" width="400"/></td>
   </tr>
 </table>
 
