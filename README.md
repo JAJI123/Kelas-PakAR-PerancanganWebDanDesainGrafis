@@ -52,11 +52,6 @@ Proyek e-commerce KIKI STICKER dikembangkan dengan pendekatan berikut:
 - HTML5, CSS3 untuk frontend
 - JavaScript dasar untuk interaktivitas
 
-## Cara Menjalankan
-1. Import database dari file SQL yang disediakan
-2. Sesuaikan konfigurasi di `config.php`
-3. Akses melalui web server (Apache/Nginx)
-
 ## Catatan
 Proyek ini masih dalam pengembangan dengan beberapa fitur seperti sistem pembayaran belum sepenuhnya diimplementasikan.
 
